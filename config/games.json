@@ -160,6 +160,11 @@
     "title": "Crazy cars"
   },
   {
+    "link": "projects/crazycattle3d/index.html",
+    "imgSrc": "projects/crazycattle3d/cc3d.jpeg",
+    "title": "Crazy cattle 3d"
+  },
+  {
     "link": "projects/creativekillchamber/index.html",
     "imgSrc": "projects/creativekillchamber/creativekillchamber.jpg",
     "title": "Creative Kill Chamber"
@@ -764,6 +769,11 @@
     "link": "projects/webretro-local/index.html",
     "imgSrc": "projects/webretro-local/assets/icon204.png",
     "title": "Web Retro Local"
+  },
+  {
+    "link": "projects/wbwwb/index.html",
+    "imgSrc": "projects/wbwwb/wbwwb.webp",
+    "title": "We Become what we Behold"
   },
   {
     "link": "projects/wolf3d/index.html",
