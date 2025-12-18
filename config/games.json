@@ -591,7 +591,7 @@
     "title": "Om Nom Bounce"
   },
   {
-    "link": "projects/pacman/index.html",
+    "link": "projects/pacman/clpacman.html",
     "imgSrc": "projects/pacman/Pac-Man.webp",
     "title": "Pac-man (NES)"
   },
@@ -786,7 +786,7 @@
     "title": "Territorial.io"
   },
   {
-    "link": "projects/tetris/index.html",
+    "link": "projects/tetris/cltetris.html",
     "imgSrc": "projects/tetris/Tetris.png",
     "title": "Tetris (NES)"
   },
