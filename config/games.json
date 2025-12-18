@@ -565,6 +565,11 @@
     "imgSrc": "projects/motox3m-winter/download.jpeg",
     "title": "MotoX3M Winter"
   },
+   {
+    "link": "projects/mousehero/index.html",
+    "imgSrc": "projects/mousehero/Mouse_Hero_title.png",
+    "title": "Mouse Hero (NES)"
+  },
   {
     "link": "projects/mrracer/index.html",
     "imgSrc": "projects/mrracer/mrracer.png",
