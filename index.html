@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background: #f0f0f0; }
+        .loader { border: 4px solid #ccc; border-top: 4px solid #2ecc71; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+
+    <div class="loader"></div>
+    <p id="status">Verifying environment...</p>
+
+    <div id="ad-bait" class="ad-container adsbox pub_300x250" style="position: absolute; left: -9999px;">&nbsp;</div>
+
+    <script>
+        const MY_GAMES_SITE = "/home";
+        const SAFE_SITE = "https://www.britannica.com";
+
+        async function checkEnvironment() {
+            // 1. Detect ChromeOS (Managed Hardware)
+            const isChromebook = /\bCrOS\b/.test(navigator.userAgent);
+
+            // 2. Detect Blockers (Bait Method)
+            let isBlockerActive = false;
+            const bait = document.getElementById('ad-bait');
+            
+            // Check if bait was hidden or removed by an extension
+            if (!bait || bait.offsetParent === null || bait.offsetHeight === 0) {
+                isBlockerActive = true;
+            }
+
+            // 3. Detect Specific School Filters (Resource Probing)
+            // Example IDs: GoGuardian (haldp...); Securly (jofoa...)
+            const schoolExtensions = [
+                'chrome-extension://haldlgldplgnggkjaafhelgiaglafanh/manifest.json', // GoGuardian
+                'chrome-extension://jofoeobidjoneinaonbebmbiibngebpa/manifest.json'  // Securly
+            ];
+
+            for (let url of schoolExtensions) {
+                try {
+                    let res = await fetch(url);
+                    if (res.ok) isBlockerActive = true;
+                } catch (e) { /* Extension not found or blocked access */ }
+            }
+
+            // FINAL LOGIC
+            // Redirect to games if it's a Chromebook OR if a blocker is detected
+            if (isChromebook || isBlockerActive) {
+                window.location.href = MY_GAMES_SITE;
+            } else {
+                window.location.href = SAFE_SITE;
+            }
+        }
+
+        // Run after a short delay to give extensions time to act on the "bait"
+        setTimeout(checkEnvironment, 1000);
+    </script>
+</body>
+</html>
