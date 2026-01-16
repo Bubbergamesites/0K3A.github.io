@@ -1,12 +1,12 @@
 html {
   font-family: 'Nunito', sans-serif;
   color: white;
-  background-color: rgb(20, 20, 20);
+  background-color: #345beb;
   margin-left: 25px;
   margin-right: 25px;
 }
 hr {
-  background-color: rgb(30,30,30);
+  background-color: #345beb;
   border-color: transparent;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -19,13 +19,6 @@ iframe {
 }
 .center {
   text-align: center;
-}
-footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(20,20,20);
 }
 a {
   color: white;
@@ -41,10 +34,10 @@ a {
 button, input {
 	border-radius: 4px;
 	outline: none;
-	border: 2px solid rgb(45, 45, 45);
+	border: 2px solid #f7f00c;
 }
 button {
-	background-color: rgb(45, 45, 45);
+	background-color: #f7f00c;
 	width: 4rem;
 	color: white;
 	height: 1.3rem;
@@ -57,8 +50,8 @@ input:focus, textarea:focus, select:focus{
 	outline: none;
 }
 button:active {
-	background-color: rgb(25, 25, 25);
-	color: rgb(224, 224, 224);
+	background-color: #f7f00c;
+	color: #f7f00c;
 }
 .space {
   background-color: transparent;
