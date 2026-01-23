@@ -1,6 +1,8 @@
 function getRandomGreeting() {
   var greetings = [
     "Bubber is the goat",
+    "OhMyGodASnake!",
+    "New Look, Same great taste!",
     "Beep boop! Are you a robot?",
     "jablicky asparagus timmypop",
     "How many sides does a circle have?",
@@ -24,7 +26,7 @@ function getRandomGreeting() {
     "Powered by hamsters!",
     "*insert cool explosion*",
     "Got to go fast!",
-    "My iPad passcode is 563543 btw",
+    "My iPad passcode is 93353 btw",
     "james the popsicle?!",
     "Sponsored by Honey!",
     "Sponsored by Chimp&co!",
